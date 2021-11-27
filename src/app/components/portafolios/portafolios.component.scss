@@ -1,0 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, .portafolio{
+  background-image: url('../../assets/img/fondo-textura-hierba_64049-124.png');
+
+}
+
+img{
+  width: 70%;
+  margin: 20px;
+}
+
+body{
+  font-size: 20px;
+  font-family: 'Open sans',sans-serif;
+  background-color: var(--blanco);
+}
+
+.portafolio{
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.portafolio h1{
+  text-align: center;
+  font-size: 2.0rem;
+  margin: 15px 0px 40px;
+}
+
+.portafolio-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.portafolio-item{
+  width: 30%;
+}
+
+.portafolio-text h2{
+  color:white;
+
+}
+.portafolio-text p{
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.btn{
+  margin-top: 1rem;
+  margin-right: 2rem;
+}
+
