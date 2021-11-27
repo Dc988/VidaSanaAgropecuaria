@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vida Sana Agropecuaria</title>
+    <link
+      rel="shortcut icon"
+      src="../../../assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <!--Fuentes Noto Serif y Open Sans-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,700&family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    />
+    <!--Archivo css -->
+    <link rel="stylesheet" src="../../../styles.scss" />
+  </head>
+
+  <body>
+
+    <main>
+
+      <!--PRODUCTOS-->
+
+      <!--Seccion portafolio suplementos de bovinos-->
+
+      <a name="suplemento_bovinos"></a>
+      <section class="portafolio">
+        <h1>Suplementos Bovinos</h1>
+        <div class="portafolio-container">
+          <section class="portafolio-item" *ngFor="let producto of productosSupBov">
+            <img [src]="producto.imagen" alt="" />
+            <section class="portafolio-text">
+              <h2>${{ producto.precio }}</h2>
+              <p>
+                {{ producto.descripcion }}
+              </p>
+            </section>
+            <div class="card-body">
+              <a href="#" class="btn btn-success">Carrito de Compras</a>
+              <a href="#" class="btn btn-success">Comprar</a>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!--Seccion portafolio concentrados de bovinos -->
+      <a name="concentrados_bovinos"></a>
+      <section class="portafolio">
+        <h1>Concentrados Bovinos</h1>
+        <div class="portafolio-container">
+          <section class="portafolio-item" *ngFor="let producto of productosConBov">
+            <img [src]="producto.imagen" alt="" />
+            <section class="portafolio-text">
+              <h2>${{ producto.precio }}</h2>
+              <p>
+                {{ producto.descripcion }}
+              </p>
+            </section>
+            <div class="card-body">
+              <a href="#" class="btn btn-success">Carrito de Compras</a>
+              <a href="#" class="btn btn-success">Comprar</a>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!--Seccion portafolio proteinados de bovinos -->
+      <a name="proteinados_bovinos"></a>
+      <section class="portafolio">
+        <h1>Proteinados Bovinos</h1>
+        <div class="portafolio-container">
+          <section class="portafolio-item" *ngFor="let producto of productosProtBov">
+            <img [src]="producto.imagen" alt="" />
+            <section class="portafolio-text">
+              <h2>${{ producto.precio }}</h2>
+              <p>
+                {{ producto.descripcion }}
+              </p>
+            </section>
+            <div class="card-body">
+              <a href="#" class="btn btn-success">Carrito de Compras</a>
+              <a href="#" class="btn btn-success">Comprar</a>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!--Seccion portafolio suplementos de equinos -->
+      <a name="suplemento_equinos"></a>
+      <section class="portafolio">
+        <h1>Suplementos Equinos</h1>
+        <div class="portafolio-container">
+          <section class="portafolio-item" *ngFor="let producto of productosSuplEqu">
+            <img [src]="producto.imagen" alt="" />
+            <section class="portafolio-text">
+              <h2>${{ producto.precio }}</h2>
+              <p>
+                {{ producto.descripcion }}
+              </p>
+            </section>
+            <div class="card-body">
+              <a href="#" class="btn btn-success">Carrito de Compras</a>
+              <a href="#" class="btn btn-success">Comprar</a>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!--Seccion portafolio concentrados de equinos -->
+      <a name="concentrados_equinos"></a>
+      <section class="portafolio">
+        <h1>Concentrados Equinos</h1>
+        <div class="portafolio-container">
+          <section class="portafolio-item" *ngFor="let producto of productosConEqu">
+            <img [src]="producto.imagen" alt="" />
+            <section class="portafolio-text">
+              <h2>${{ producto.precio }}</h2>
+              <p>
+                {{ producto.descripcion }}
+              </p>
+            </section>
+            <div class="card-body">
+              <a href="#" class="btn btn-success">Carrito de Compras</a>
+              <a href="#" class="btn btn-success">Comprar</a>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!--Seccion portafolio proteinados de equinos -->
+      <a name="proteinados_equinos"></a>
+      <section class="portafolio">
+        <h1>Proteinados Equinos</h1>
+        <div class="portafolio-container">
+          <section class="portafolio-item" *ngFor="let producto of productosProtEqu">
+            <img [src]="producto.imagen" alt="" />
+            <section class="portafolio-text">
+              <h2>${{ producto.precio }}</h2>
+              <p>
+                {{ producto.descripcion }}
+              </p>
+            </section>
+            <div class="card-body">
+              <a href="#" class="btn btn-success">Carrito de Compras</a>
+              <a href="#" class="btn btn-success">Comprar</a>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!--Seccion portafolio suplementos de porcinos -->
+      <a name="suplemento_porcinos"></a>
+      <section class="portafolio">
+        <h1>Suplementos Porcinos</h1>
+        <div class="portafolio-container">
+          <section class="portafolio-item" *ngFor="let producto of productosSupPor">
+            <img [src]="producto.imagen" alt="" />
+            <section class="portafolio-text">
+              <h2>${{ producto.precio }}</h2>
+              <p>
+                {{ producto.descripcion }}
+              </p>
+            </section>
+            <div class="card-body">
+              <a href="#" class="btn btn-success">Carrito de Compras</a>
+              <a href="#" class="btn btn-success">Comprar</a>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!--Seccion portafolio concentrados de cerdos -->
+      <a name="concentrados_porcinos"></a>
+      <section class="portafolio">
+        <h1>Concentrados Porcinos</h1>
+        <div class="portafolio-container">
+          <section class="portafolio-item" *ngFor="let producto of productosConPor">
+            <img [src]="producto.imagen" alt="" />
+            <section class="portafolio-text">
+              <h2>${{ producto.precio }}</h2>
+              <p>
+                {{ producto.descripcion }}
+              </p>
+            </section>
+            <div class="card-body">
+              <a href="#" class="btn btn-success">Carrito de Compras</a>
+              <a href="#" class="btn btn-success">Comprar</a>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!--Seccion portafolio proteinados de cerdos -->
+      <a name="proteinados_porcinos"></a>
+      <section class="portafolio">
+        <h1>Proteinados Porcinos</h1>
+        <div class="portafolio-container">
+          <section class="portafolio-item" *ngFor="let producto of productosProtPor">
+            <img [src]="producto.imagen" alt="" />
+            <section class="portafolio-text">
+              <h2>${{ producto.precio }}</h2>
+              <p>
+                {{ producto.descripcion }}
+              </p>
+            </section>
+            <div class="card-body">
+              <a href="#" class="btn btn-success">Carrito de Compras</a>
+              <a href="#" class="btn btn-success">Comprar</a>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!--Seccion portafolio suplementos de avicolas -->
+      <a name="suplemento_avicolas"></a>
+      <section class="portafolio">
+        <h1>Suplementos avicolas</h1>
+        <div class="portafolio-container">
+          <section class="portafolio-item" *ngFor="let producto of productosSupAvi">
+            <img [src]="producto.imagen" alt="" />
+            <section class="portafolio-text">
+              <h2>${{ producto.precio }}</h2>
+              <p>
+                {{ producto.descripcion }}
+              </p>
+            </section>
+            <div class="card-body">
+              <a href="#" class="btn btn-success">Carrito de Compras</a>
+              <a href="#" class="btn btn-success">Comprar</a>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!--Seccion portafolio concentrados de equinos -->
+      <a name="concentrados_avicolas"></a>
+      <section class="portafolio">
+        <h1>Concentrados Avícolas</h1>
+        <div class="portafolio-container">
+          <section class="portafolio-item" *ngFor="let producto of productosConAvi">
+            <img [src]="producto.imagen" alt="" />
+            <section class="portafolio-text">
+              <h2>${{ producto.precio }}</h2>
+              <p>
+                {{ producto.descripcion }}
+              </p>
+            </section>
+            <div class="card-body">
+              <a href="#" class="btn btn-success">Carrito de Compras</a>
+              <a href="#" class="btn btn-success">Comprar</a>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!--Seccion portafolio proteinados de avicolas -->
+      <a name="proteinados_avicolas"></a>
+      <section class="portafolio">
+        <h1>Proteinados Avícolas</h1>
+        <div class="portafolio-container">
+          <section class="portafolio-item" *ngFor="let producto of productosProtAvi">
+            <img [src]="producto.imagen" alt="" />
+            <section class="portafolio-text">
+              <h2>${{ producto.precio }}</h2>
+              <p>
+                {{ producto.descripcion }}
+              </p>
+            </section>
+            <div class="card-body">
+              <a href="#" class="btn btn-success">Carrito de Compras</a>
+              <a href="#" class="btn btn-success">Comprar</a>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <a class="btn_whatsApp" href="#">
+      <i class="fab fa-whatsapp"></i>
+      <span>¿En qué podemos ayudarte?</span>
+    </a>
+
+  </body>
+</html>
